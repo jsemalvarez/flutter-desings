@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       //   mainAxisAlignment: MainAxisAlignment.center,
       //   children: const [Text('Hello World'), Text('Hello World')],
       // )
+      theme: ThemeData.dark(),
       initialRoute: 'home_screen',
       routes: {
         'basic_desing': (context) => const BasicDesingScreen(),
