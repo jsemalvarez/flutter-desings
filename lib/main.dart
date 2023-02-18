@@ -1,4 +1,5 @@
 import 'package:disenos/screens/basic_desing.dart';
+import 'package:disenos/screens/home_screen.dart';
 import 'package:disenos/screens/scroll_desing.dart';
 import 'package:flutter/material.dart';
 
@@ -15,10 +16,11 @@ class MyApp extends StatelessWidget {
       //   mainAxisAlignment: MainAxisAlignment.center,
       //   children: const [Text('Hello World'), Text('Hello World')],
       // )
-      initialRoute: 'scroll_desing',
+      initialRoute: 'home_screen',
       routes: {
         'basic_desing': (context) => const BasicDesingScreen(),
-        'scroll_desing': (context) => const ScrollScreen()
+        'scroll_desing': (context) => const ScrollScreen(),
+        'home_screen': (context) => const HomeScreen()
       },
     );
   }
