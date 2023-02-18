@@ -18,14 +18,30 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        Text('Este es un texto'),
-        Text('Este es un texto'),
-        Text('Este es un texto'),
-      ],
+    const textStyle = TextStyle(
+        fontWeight: FontWeight.bold, fontSize: 70, color: Colors.white);
+    return SafeArea(
+      bottom: false,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const Text(
+            '11°',
+            style: textStyle,
+          ),
+          const Text(
+            'Miercoles',
+            style: textStyle,
+          ),
+          Expanded(child: Container()),
+          const Icon(
+            Icons.keyboard_arrow_down_rounded,
+            color: Colors.white,
+            size: 90,
+          ),
+        ],
+      ),
     );
   }
 }
